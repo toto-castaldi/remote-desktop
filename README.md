@@ -41,4 +41,9 @@ reboot
 ```bash
 #change keyboard layout
 setxkbmap it
+
+#sudoers . Add user to group sudo
+sudo vi /etc/group
 ```
+
+
