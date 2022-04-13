@@ -46,4 +46,23 @@ setxkbmap it
 sudo vi /etc/group
 ```
 
+## Custom RESOLUTION
 
+```bash
+xrandr --listmonitors
+cvt -v 1920 1000
+sudo su -
+mkdir -v "/etc/X11/xorg.conf.d/"
+vi /etc/X11/xorg.conf.d/10-monitor.conf
+# MONITOR 
+reboot
+```
+
+### MONITOR
+
+```
+Section "Monitor"
+        Identifier "[YOUR_OUTPUT]"
+        Modeline "1920x1000_60.00"  159.25  1920 2040 2240 2560  1000 1003 1013 1038 -hsync +vsync
+EndSection
+```
