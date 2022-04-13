@@ -32,5 +32,13 @@ apt install tasksel
 tasksel install xubuntu-desktop
 adduser [USER]
 dpkg -i nomachine_7.9.2_1_amd64.deb
+dpkg-reconfigure keyboard-configuration
 reboot
+```
+
+## Utilities
+
+```bash
+#change keyboard layout
+setxkbmap it
 ```
